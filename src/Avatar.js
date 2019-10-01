@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 
 
 
@@ -57,7 +58,13 @@ class Avatar extends React.Component {
         </div>
     );
   }
+
 }
 
+
+Avatar.propTypes = {
+  name: PropTypes.string,
+  src: PropTypes.string
+};
 
 export default Avatar
